@@ -12,6 +12,14 @@ def long_planeteer_calls(array)
   
 end
 
+   def print_long_names(array)
+         array.find_all{|n| n.length > 4 }.each do |name|
+                   puts name
+         end
+   end 
+
+print_long_names(name_array)
+
 def find_the_cheese# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
