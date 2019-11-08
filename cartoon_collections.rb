@@ -3,7 +3,7 @@ def roll_call_dwarves(array)
   array.each_with_index {|name, index| puts "#{index+1}. #{name}"}
 end
 
-def summon_captain_planet(planeteer_calls)
+def summon_captain_planet(array)
   array.collect{|x| x + planeteer_calls.upcase}
 end
 
