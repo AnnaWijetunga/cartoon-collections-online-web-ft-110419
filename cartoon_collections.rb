@@ -9,14 +9,10 @@ def summon_captain_planet(array)
 end 
 
 def long_planeteer_calls(array)
-  
+  array.find_all{|n| n.length > 4 }.each do |name|
+    puts name
+  end
 end
-
-   def print_long_names(array)
-         array.find_all{|n| n.length > 4 }.each do |name|
-                   puts name
-         end
-   end 
 
 print_long_names(name_array)
 
