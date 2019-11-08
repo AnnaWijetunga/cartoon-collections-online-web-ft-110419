@@ -8,9 +8,15 @@ def summon_captain_planet(array)
   end
 end 
 
+# def long_planeteer_calls(array)
+#   array.find_all{|n| n.length > 4 }.each do |name|
+#     puts name
+#   end
+# end
+
 def long_planeteer_calls(array)
-  array.find_all{|n| n.length > 4 }.each do |name|
-    puts name
+  array.any? do |word|
+    word.length > 4
   end
 end
 
